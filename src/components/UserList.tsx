@@ -28,12 +28,9 @@ const UsersList: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {users.map((user) => (
-        <div
-          key={user.id}
-          style={{ width: "30%", margin: "1%", float: "left" }}
-        >
+        <div key={user.id} className="w-full md:w-auto">
           <UserCard
             avatarUrl={`https://robohash.org/${user.id}`}
             userName={`${user.first_name} ${user.last_name}`}

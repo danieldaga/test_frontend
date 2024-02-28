@@ -1,12 +1,11 @@
-
 const Header = () => {
   return (
-    <header className="bg-purple-900 py-6 br-20">
-      <div className="text-center py-4">
-        <h1 className="text-4xl font-bold text-gray-800">header</h1>
-      </div>
-    </header>
-  )
-}
+    <div className="bg-gradient-to-r from-purple-500 to-pink-500 py-12 rounded-lg">
+      <h1 className="text-4xl font-bold text-center text-white  px-4 py-2 shadow-lg">
+        Users Test FrontEnd
+      </h1>
+    </div>
+  );
+};
 
-export default Header
+export default Header;

@@ -15,7 +15,7 @@ const UserCard: React.FC<UserCardProps> = ({
   userPhone,
 }) => {
   return (
-    <Card>
+    <Card className="bg-gradient-to-r from-purple-500 to-pink-500 py-12 rounded-lg">
       <CardHeader>
         <div className="flex justify-center">
           <div className="w-24 h-24 flex justify-center items-center bg-gray-200 rounded-full">
