@@ -29,7 +29,7 @@ const UsersList: React.FC = () => {
     <div>
       {users.map(user => (
           <div key={user.id} style={{ width: '30%', margin: '1%', float: 'left' }}>
-            <UserCard avatarUrl={`https://robohash.org/${user.id}`}/>
+            <UserCard avatarUrl={`https://robohash.org/${user.id}`} userName={`${user.first_name} ${user.last_name}`} userMail={user.email} userPhone={user.phone_number} />
           {/* <img src={`https://robohash.org/${user.id}`} alt="avatar" />
           <div>
             <p>Name: {`${user.first_name} ${user.last_name}`}</p>

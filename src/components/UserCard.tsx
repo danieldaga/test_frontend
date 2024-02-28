@@ -8,9 +8,12 @@ import {
 
  interface UserCardProps {
     avatarUrl: string;
+    userName: string;
+    userMail: string;
+    userPhone: string ;
   }
 
-const UserCard: React.FC<UserCardProps> = ({ avatarUrl }) => {
+const UserCard: React.FC<UserCardProps> = ({ avatarUrl, userName, userMail, userPhone }) => {
     return (
         <Card>
             <CardHeader>
@@ -22,10 +25,11 @@ const UserCard: React.FC<UserCardProps> = ({ avatarUrl }) => {
                 </div>
             </div>
                 
-                <CardTitle>Card Title</CardTitle>
+                <CardTitle>{userName}</CardTitle>
             </CardHeader>
             <CardContent>
-                <p>Card Content</p>
+            <p>Email: {userMail}</p>
+            <p>Phone: {userPhone}</p>
             </CardContent>
         </Card>
       
