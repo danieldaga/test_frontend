@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Proyecto Test FrontEnd Vite con React, TypeScript y Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una plantilla básica que utiliza Vite como herramienta de desarrollo para crear aplicaciones web con React, TypeScript y Tailwind CSS. A continuación, se proporcionan instrucciones sobre cómo configurar y ejecutar el proyecto en tu entorno local.
 
-Currently, two official plugins are available:
+## Requisitos previos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo e instalarlo desde [https://nodejs.org/](https://nodejs.org/).
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clona este repositorio en tu máquina local utilizando Git:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/danieldaga/test_frontend.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Accede al directorio del proyecto:
+
+```bash
+cd test_frontend
+```
+
+3. Instala las dependencias utilizando pnpm:
+
+```bash
+pnpm install
+```
+
+## Ejecución del proyecto
+
+```bash
+pnpm run dev
+```
+
+Este comando iniciará el servidor de desarrollo proporcionado por Vite. Abre tu navegador web y navega a http://localhost:3000 para ver la aplicación en funcionamiento. La página se actualizará automáticamente si realizas cambios en el código fuente.
+
+## Desarrollo para producción
+
+Si desea ejecutar el proyecto para producción, puede ejecutar el comando:
+
+```bash
+pnpm run build
+```
+
+
+
